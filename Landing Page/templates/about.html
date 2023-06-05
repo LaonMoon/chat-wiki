@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!-- Website - www.codingnepalweb.com -->
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chat WiKi | dialogue segmetation summarization</title>
+    <link rel="stylesheet" href=about2.css>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+</head>
+
+<body>
+    <nav>
+        <div class="menu">
+            <div class="logo">
+                <a href="#">Chat WiKi</a>
+            </div>
+            <ul>
+                <li><a href="#" onclick="goToHome()">Home</a></li>
+                <li><a href="#" onclick="goToAbout()">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+            <button class="btn" id="btn1">Log In</button>
+            <button class="btn" id="btn2">Sign Up</button>
+        </div>
+    </nav>
+    <div class="img"></div>
+    <div class="center">
+        <div class="title">나에게 맞춤 정보 요약, Chat wiki</div>
+        <div class="sub_title">필요한 정보만 편리하고 정확하게 </div>
+    </div>
+
+    <div class="container" style="background-color: #1b1918;">
+        <div class="section" style="background-color: #ffffff; display: flex;">
+            <div class="image-container" style="flex-basis: 30%;">
+                <img src="../static/css/openchat.png" alt="이미지" onload="adjustSectionHeight(this)">
+            </div>
+            <div class="content-container" style="flex-basis: 70%;">
+                <h1>채팅방 형태의 커뮤니티의 문제점?</h1>
+                <p>사람들은 채팅방에서 다양한 정보들을 주고받지만, 지나간 채팅을 찾아보기가 힘든 상황이 있습니다.</p>
+                <p>오픈채팅방의 경우 하루에도 수없이 많은 대화가 지나가기 때문에 정작 유용한 정보는 그 중 일부에 불과합니다.</p>
+            </div>
+        </div>
+        <div class="section" style="background-color: #ddd; display: flex;">
+            <div class="content-container" style="flex-basis: 60%;">
+                <h1>Chat WiKi는 이러한 문제를 해결하기 위한 서비스입니다.</h1>
+                <p> ‘채팅방 위키’의 위키 사이트를 이용한 정리된 문서는 접근성이 높아 유용하게 사용될 수 있습니다. 또한 특정 관심사로</p>
+                <p> 모인 여러 사람이 사용하는 게시판에도 내용을 자동으로 정리할 수 있도록 하여 중복된 질문이 나오는 일을 방지할 수 있고,</p>
+                <p> 원하는 응답이 사전에 나왔는지 확인할 수 있다.</p>
+            </div>
+            <div class="image-container" style="flex-basis: 40%;">
+                <img src="../static/css/chatwiki.png" alt="이미지">
+            </div>
+        </div>
+        <div class="section" style="background-color: #ffffff;">
+            <h1>채팅 위키(Chat WiKi)의 주요 기능:</h1>
+            <ul>
+                <li>위키 형식으로 채팅 내용을 효율적으로 정리</li>
+                <li>빠른 검색으로 원하는 정보를 쉽게 찾기</li>
+                <li>중요한 대화를 강조하고 요약</li>
+                <li>공동 편집과 지식 공유</li>
+                <li>직관적인 인터페이스로 쉬운 탐색</li>
+            </ul>
+            <p>채팅 위키(Chat WiKi)의 힘을 경험하고, 채팅방에서 유용한 정보를 찾고 접근하는 방식을 혁신해 보세요.</p>
+        </div>
+    </div>
+
+
+    <script>
+        function goToHome() {
+            window.location.href = "/";
+        }
+        function goToAbout() {
+            window.location.href = "about.html";
+        }
+    </script>
+    <script>
+        function adjustSectionHeight(img) {
+            img.onload = function () {
+                var section = img.closest('.section');
+                section.classList.add('adjusted');
+            };
+        }
+    </script>
+</body>
+
+</html>
